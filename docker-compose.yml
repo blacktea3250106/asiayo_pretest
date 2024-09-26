@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app  # Mount the current directory to /app in the container
+    ports:
+      - "8000:8000"  # Map port 8000 on the host to port 8000 on the container
